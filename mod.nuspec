@@ -3,18 +3,20 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mod</id>
+    <title>moderne-cli</title>
     <version>1.6.17</version>
-    <packageSourceUrl>https://github.com/moderneinc/chocolatey-moderne</packageSourceUrl>
+
     <owners>moderne.io</owners>
-    
-    <title>mod (Install)</title>
     <authors>Moderne Inc.</authors>
-    <projectUrl>https://www.moderne.io/</projectUrl>
-    <iconUrl>https://app.moderne.io/favicon/favicon_android_192.png</iconUrl>
     <copyright>2023 Moderne Inc.</copyright>
+
+    <projectUrl>https://www.moderne.io</projectUrl>
+    <licenseUrl>https://github.com/moderneinc/chocolatey-moderne/blob/main/LICENSE</licenseUrl>
+    <iconUrl>https://app.moderne.io/favicon/favicon_android_192.png</iconUrl>
+    <packageSourceUrl>https://github.com/moderneinc/chocolatey-moderne</packageSourceUrl>
     <docsUrl>https://docs.moderne.io/</docsUrl>
     <bugTrackerUrl>https://github.com/moderneinc/chocolatey-moderne/issues</bugTrackerUrl>
-    <tags>mod moderne mod-cli</tags>
+    <tags>mod moderne mod-cli moderne-cli security vulnerabilities refactoring developers</tags>
     <summary>Automated code remediation.</summary>
     <description>
 	With [Moderne](https://moderne.io/), you can fix security vulnerabilities, standardize code quality, and automate maintenance processes such as framework migrations. 
