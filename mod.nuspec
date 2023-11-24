@@ -14,7 +14,7 @@
     <licenseUrl>https://github.com/moderneinc/chocolatey-moderne/blob/main/LICENSE</licenseUrl>
     <iconUrl>https://app.moderne.io/favicon/favicon_android_192.png</iconUrl>
     <packageSourceUrl>https://github.com/moderneinc/chocolatey-moderne</packageSourceUrl>
-    <docsUrl>https://docs.moderne.io/</docsUrl>
+    <docsUrl>https://docs.moderne.io</docsUrl>
     <bugTrackerUrl>https://github.com/moderneinc/chocolatey-moderne/issues</bugTrackerUrl>
     <tags>mod moderne mod-cli moderne-cli security vulnerabilities refactoring developers</tags>
     <summary>Automated code remediation.</summary>
