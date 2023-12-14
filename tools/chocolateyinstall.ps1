@@ -5,9 +5,9 @@ $version    = "v$env:ChocolateyPackageVersion"
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileFullPath  = "$toolsDir\\mod.exe"
-  url           = "https://pkgs.dev.azure.com/moderneinc/moderne_public/_packaging/staging/maven/v1/io/moderne/moderne-cli-windows/$version/moderne-cli-windows-$version"
+  url           = "https://pkgs.dev.azure.com/moderneinc/moderne_public/_packaging/moderne/maven/v1/io/moderne/moderne-cli-windows/$version/moderne-cli-windows-$version"
 
-  checksum      = 'd8f165b74c09f74ddda300e0c1fc3f6d61c740ec058ec6f2627a2a72821925b2'
+  checksum      = '17C2CAD554876B5AA4458197904D25C0485D0FACD9E6404F58A8CB3EF4081E93'
   checksumType  = 'sha256'
 }
 
