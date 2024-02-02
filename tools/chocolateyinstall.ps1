@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $version    = "v$env:ChocolateyPackageVersion".split("-")[0]
-if ($env:ChocolateyPackageVersion -contains "-beta") {
+if ($env:ChocolateyPackageVersion -like "*-beta") {
     $branch = "staging"
 } else {
     $branch = "moderne"
@@ -12,7 +12,7 @@ $packageArgs = @{
   fileFullPath  = "$toolsDir\\mod.exe"
   url           = "https://pkgs.dev.azure.com/moderneinc/moderne_public/_packaging/$branch/maven/v1/io/moderne/moderne-cli-windows/$version/moderne-cli-windows-$version"
 
-  checksum      = '3e7eb755b7b42b1b016625cf9967bc0641cd2b7b7c263ea6ad9f60f45fb587b4'
+  checksum      = '19cceb4c1e2645b5c1f2b82b71ce56fcd327b8baa9f3621743c8ddaba5a159b7'
   checksumType  = 'sha256'
 }
 
