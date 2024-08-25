@@ -12,7 +12,7 @@ $packageArgs = @{
   fileFullPath  = "$toolsDir\\mod.exe"
   url           = "https://pkgs.dev.azure.com/moderneinc/moderne_public/_packaging/$branch/maven/v1/io/moderne/moderne-cli-windows/$version/moderne-cli-windows-$version"
 
-  checksum      = '36ec4c588cf76d69c732d1ffb1161e27620a33cd45028fe90577700e0d248721'
+  checksum      = '0ffb2c563903f1c491309ac9ffff9ba191f07ebb5070621291ca7d56f514fe2e'
   checksumType  = 'sha256'
 }
 
