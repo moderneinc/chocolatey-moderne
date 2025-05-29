@@ -1,0 +1,34 @@
+name: Push Moddy Desktop to Chocolatey
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'moddy-desktop/**'
+
+  workflow_dispatch: { }
+
+jobs:
+  push:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Pack
+        uses: crazy-max/ghaction-chocolatey@v3
+        with:
+          args: pack moddy-desktop/moddy-desktop.nuspec
+
+      - name: Get nupkg path
+        id: nupkg
+        shell: pwsh
+        run: |
+          $pkg = Get-ChildItem moddy-desktop.*.nupkg | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+          echo "nupkg_path=$($pkg.FullName)" >> $env:GITHUB_OUTPUT
+
+      - name: Push
+        uses: crazy-max/ghaction-chocolatey@v3
+        with:
+          args: push ${{ steps.nupkg.outputs.nupkg_path }} --source "https://push.chocolatey.org/" --api-key ${{ secrets.CHOCOLATEY_API_KEY }}

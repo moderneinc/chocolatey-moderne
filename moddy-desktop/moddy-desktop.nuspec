@@ -2,9 +2,9 @@
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>mod</id>
-    <title>moderne-cli</title>
-    <version>3.41.0-beta</version>
+    <id>moddy-desktop</id>
+    <title>Moddy Desktop</title>
+    <version>0.0.9</version>
 
     <owners>moderne.io</owners>
     <authors>Moderne Inc.</authors>
@@ -16,13 +16,13 @@
     <packageSourceUrl>https://github.com/moderneinc/chocolatey-moderne</packageSourceUrl>
     <docsUrl>https://docs.moderne.io</docsUrl>
     <bugTrackerUrl>https://github.com/moderneinc/chocolatey-moderne/issues</bugTrackerUrl>
-    <tags>mod moderne mod-cli moderne-cli security vulnerabilities refactoring developers</tags>
-    <summary>Automated code remediation.</summary>
+    <tags>moderne moddy moddy-desktop security vulnerabilities refactoring developers</tags>
+    <summary>Automated code remediation desktop client</summary>
     <description>
 	With [Moderne](https://moderne.io/), you can fix security vulnerabilities, standardize code quality, and automate maintenance processes such as framework migrations. 
 	Code refactoring work and security vulnerability remediations that used to take months and teams of developers can be done in minutes.
 	This can not only save your company millions of dollars in software maintenance costs, but it can also give developers substantially more time to focus on delivering business value.
-	</description>
+	  </description>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
