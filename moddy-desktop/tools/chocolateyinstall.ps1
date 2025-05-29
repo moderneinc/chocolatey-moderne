@@ -11,6 +11,9 @@ $packageArgs = @{
   silentArgs     = '/S'
   validExitCodes = @(0)
   softwareName   = 'Moddy Desktop*'
+
+  checksum       = '4e9b07083f072754415c72368e30ac378c894bcb99bcba016c80f13c42909319'
+  checksumType   = 'sha256'  # or 'sha1' if that's what you're using
 }
 
 Install-ChocolateyPackage @packageArgs
