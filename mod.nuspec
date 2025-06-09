@@ -4,11 +4,11 @@
   <metadata>
     <id>mod</id>
     <title>moderne-cli</title>
-    <version>3.41.0-beta</version>
+    <version>3.42.0-beta</version>
 
     <owners>moderne.io</owners>
     <authors>Moderne Inc.</authors>
-    <copyright>2025 Moderne Inc.</copyright>
+    <copyright>2023 Moderne Inc.</copyright>
 
     <projectUrl>https://www.moderne.io</projectUrl>
     <licenseUrl>https://github.com/moderneinc/chocolatey-moderne/blob/main/LICENSE</licenseUrl>
