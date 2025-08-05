@@ -12,7 +12,7 @@ $packageArgs = @{
   validExitCodes = @(0)
   softwareName   = 'Moddy Desktop*'
 
-  checksum =       '2a255e870f553611a49f6f7b714b8a8459af92552dc1159195d2ab5def0bb7e2'
+  checksum =       '0965e94bec6e20c8375f2d3dbdfc5650cc471c9a28509b28ead57cc7c49acb7b'
   checksumType   = 'sha256'  # or 'sha1' if that's what you're using
 }
 
