@@ -3,3 +3,7 @@ Thumbs.db
 .idea
 
 *.nupkg
+
+# Moderne CLI
+.moderne/*
+!.moderne/context/
