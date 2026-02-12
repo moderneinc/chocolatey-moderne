@@ -7,7 +7,7 @@ $packageArgs = @{
   fileFullPath  = "$toolsDir\\mod.exe"
   url           = "https://github.com/moderneinc/moderne-cli-releases/releases/download/$version/moderne-cli-windows.exe"
 
-  checksum      = '3d4d205e212383e8715d0010f87b01b7f0036fe26a81230ec5b93a62d99e8846'
+  checksum      = '841d57be0f126fd3f7f483ee3fe2d4bd9c34e623e1d627ee8a9a09e2004721be'
   checksumType  = 'sha256'
 }
 
