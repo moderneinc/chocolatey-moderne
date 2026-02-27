@@ -1,14 +1,14 @@
 $ErrorActionPreference = 'Stop'
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$version    = "v$env:ChocolateyPackageVersion".split("-")[0]
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$version  = $env:ChocolateyPackageVersion
 
-$packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
-  fileFullPath  = "$toolsDir\\mod.exe"
-  url           = "https://github.com/moderneinc/moderne-cli-releases/releases/download/$version/moderne-cli-windows.exe"
+$url = "https://repo1.maven.org/maven2/io/moderne/moderne-cli/$version/moderne-cli-$version-modw.cmd"
 
-  checksum      = 'eddaf019e18d361015e16ad7a0497aa0f0ebe5e6af2c88b5b39359a74660eee9'
-  checksumType  = 'sha256'
-}
+$ProgressPreference = 'SilentlyContinue'
+Invoke-WebRequest -Uri $url -OutFile "$toolsDir\modw.cmd"
 
-Get-ChocolateyWebFile @packageArgs
+# Create mod.cmd forwarder
+Set-Content -Path "$toolsDir\mod.cmd" -Value "@echo off`r`n`"%~dp0modw.cmd`" %*"
+
+# Trigger AOT cache creation
+& "$toolsDir\mod.cmd" --version
