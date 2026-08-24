@@ -3,3 +3,5 @@ Thumbs.db
 .idea
 
 *.nupkg
+
+.cursor/rules/*.local.mdc
