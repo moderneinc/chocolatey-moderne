@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $version  = $env:ChocolateyPackageVersion
 
-$url = "https://repo1.maven.org/maven2/io/moderne/moderne-cli/$version/moderne-cli-$version-modw.cmd"
+$url = "https://artifacts.codegenomeproject.org/maven/io/moderne/moderne-cli/$version/moderne-cli-$version-modw.cmd"
 
 $ProgressPreference = 'SilentlyContinue'
 Invoke-WebRequest -Uri $url -OutFile "$toolsDir\modw.cmd"
