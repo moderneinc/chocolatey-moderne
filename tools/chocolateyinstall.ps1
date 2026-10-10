@@ -1,6 +1,7 @@
 $ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$version  = $env:ChocolateyPackageVersion
+# Strip the -beta suffix the release workflow adds to bypass moderation
+$version  = $env:ChocolateyPackageVersion -replace '-.+$'
 
 $url = "https://artifacts.codegenomeproject.org/maven/io/moderne/moderne-cli/$version/moderne-cli-$version-modw.cmd"
 
